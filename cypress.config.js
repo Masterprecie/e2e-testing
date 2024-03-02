@@ -6,4 +6,7 @@ export default defineConfig({
       // implement node event listeners here
     },
   },
+  env: {
+    SITE_URL: "http://localhost:5174/",
+  },
 });

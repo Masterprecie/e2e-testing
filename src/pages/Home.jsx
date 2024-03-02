@@ -19,7 +19,7 @@ export const Home = () => {
       <form onSubmit={handleSubmit(handleLogin)}>
         <div className="form-input">
           <input
-            data-cy="first-name-input"
+            // data-cy="first-name-input"
             type="text"
             placeholder="First Name"
             id="first_name"
@@ -31,13 +31,13 @@ export const Home = () => {
               },
             })}
           />
-          <p data-cy="error-first-name" className="error">
+          <p id="error-first-name" className="error">
             {errors.first_name?.message}
           </p>
         </div>
         <div className="form-input">
           <input
-            data-cy="last-name-input"
+            // data-cy="last-name-input"
             type="text"
             placeholder="Last Name"
             id="last_name"
@@ -49,12 +49,12 @@ export const Home = () => {
               },
             })}
           />
-          <p data-cy="error-last-name" className="error">
+          <p id="error-last-name" className="error">
             {errors.last_name?.message}
           </p>
         </div>
 
-        <button data-cy="submit" type="submit">
+        <button id="submit" type="submit">
           Submit
         </button>
       </form>
