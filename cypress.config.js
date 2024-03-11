@@ -7,6 +7,6 @@ export default defineConfig({
     },
   },
   env: {
-    SITE_URL: "http://localhost:5174/",
+    SITE_URL: "http://localhost:5173/",
   },
 });

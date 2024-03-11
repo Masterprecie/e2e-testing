@@ -15,5 +15,6 @@ describe("register page", () => {
     cy.get("[id=first_name]").type("John");
     cy.get("[id=last_name]").type("Doe");
     cy.get("[id=submit]").click();
+    cy.url().should("include", "/success");
   });
 });
